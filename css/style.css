@@ -1,0 +1,116 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-size: 18px;
+  line-height: 1.15;
+  margin: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:inline;
+  padding-right:20px;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+
+nav{
+  background-color: pink;
+  padding: 20px 0 18px 0; 
+  text-align: right;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+}
+
+
+
+/*Your Code Here*/
+/* Step 1: Write selector/rule property to add an underline when
+links in the navigation are in the hover or focus state.*/
+nav a:focus, a:hover{
+  text-decoration: underline;
+}
+
+/* Step 2a: Write selector/rule property to position the default position for the skip class element*/
+.skip a{ /* not sure if i need the a */
+  top: -40px;
+  position: absolute;
+}
+
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus{
+  position: absolute; /* not sure if i need*/
+  top: 20px;
+}
+
+
+
+/* Step 4: Write selector/rule property to style the container */
+  /* .container{
+    display: grid;
+    /* grid-template-columns: repeat(1fr, 5fr, 1fr); 
+    grid-template-columns: 1fr 5fr 1fr;
+    row-gap: 15px;
+  } 
+  */
+
+/* Add your media query here */
+/* @media only screen and (min-width: 800px) { */
+
+  /* Step 9: Write the selector/rule property to style the nav element 
+  nav {
+    text-align: right;
+    padding: 30px 0px 30px 0px;
+  } */
+
+  /* Step 10: Write the selector/rule property to update the .container class */
+  /* .container {
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+  } 
+}  */
