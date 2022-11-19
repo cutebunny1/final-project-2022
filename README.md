@@ -1,4 +1,4 @@
-# final-project-2022
+# Final Project SI 339 - Fall 2022
 
 Vegetarian Food Ideas Website
 
