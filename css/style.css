@@ -78,6 +78,10 @@ h3{
   margin: 0;
 }
 
+.dessert-h3 {
+  display: none;
+}
+
 /* make lunch/dinner and dessert paras invisble in mobile view */
 .dessert_info p, .meal_info p{
   display: none;
@@ -166,6 +170,10 @@ footer{
     display: none;
   }
 
+  .dessert-h3{
+    display: block;
+  }
+
   /* make lunch/dinner and dessert paras visble in tablet view */
   .dessert_info p, .meal_info p{
     display: block;
@@ -182,12 +190,14 @@ footer{
 
   .grid img{
     width: 70%;
+    margin: 10px 0px 10px 0px;
   }
 
   .grid img:nth-child(3n) {  
     grid-column: 1/-1;
     width: 75%;
-    height: 850px;
+    height: 750px;
+    margin: 10px 0px 0px 0px;
   }
 
   /* remove chocolate pics for tablet view, dessert page*/
