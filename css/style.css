@@ -119,31 +119,29 @@ footer{
   text-align: center;
 }
 
-/* styling images when hover */
-img:hover{
+/* styling grid images when hover */
+.grid img:hover{
   border: 5px #002d3d dashed;
 }
 
-/* AQUIIIIIII  */
-/* grid for lunch/dinner*/
+/* grid for lunch/dinner */
 .grid{
   display: grid;
-  grid-template-columns: auto auto auto;
-  /* grid-template-columns: 1fr; */
-  /* width: 100%; */
+  justify-items: center;
+  align-items: center;
+
+  /* for one column view - mobile */
+  grid-template-columns: 1fr;
 }
 
 .grid img{
   border: solid 7px #ceabf1;
-  margin: 20px 30px 10px 10px;
-  /* margin-right: 30px; */
-  width: 90%;
-  /* width: 450px; */
-  justify-content: center;
+  margin: 15px 15px 15px 15px;
 }
 
-/* flex for dessert page*/
-/* .flex{
+
+/* flex for dessert page, mobile view*/
+.flex{
   display: flex;
   flex-direction: column;
 }
@@ -153,35 +151,74 @@ img:hover{
   width: 75%;
   margin: 10px;
   align-self: center;
-} */
+}
 
-/* remove chocolate pics for tablet view */
-/* .choco {
-  display: none;
-} */
+/* styling grid images when hover */
+.flex img:hover{
+  border: 5px #002d3d dashed;
+}
 
-/* show all pics in mobile but one at a time */
+/* TABLET VIEW */
+@media screen and (min-width: 768px){
+  /* remove h2s on both pages */
+  h2 {
+    display: none;
+  }
+  
+  /* make lunch/dinner and dessert paras visble in tablet view */
+  .dessert_info p, .meal_info p{
+    display: block;
+    padding: 10px 20px 10px 15px;
+    text-align: center;
+  }
+
+  .grid{
+    /* for two column view */
+    grid-template-columns: auto auto;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .grid div img:nth-child(3n) {  
+    grid-column: 1/-1;
+    width: 90%;
+    height: 850px;
+  }
+
+  /* remove chocolate pics for tablet view, dessert page*/
+  .choco {
+    display: none;
+  }
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1024px){
+  /* make h2 invisible in desktop */
+  h2 {
+    display: none;
+  }
+
+  /* make h3 invisible in desktop */
+  h3 {
+    display: none;
+  }
+
+  /* make lunch/dinner and dessert paras visble in desktop view */
+  .dessert_info p, .meal_info p{
+    display: block;
+    padding: 10px 20px 10px 15px;
+    text-align: center;
+  }
+
+  /* for three column view */
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+
+
 /* show all pics in desktop view */
-
-/* change headings visibility */
-/* make h2 invisible in desktop */
-/* h2 {
-  display: none;
-} */
-
-/* make h3 invisible in desktop */
-/* h3 {
-  display: none;
-} */
-
-/* make lunch/dinner and dessert paras visble in tablet/desktop view */
-/* .dessert_info p, .meal_info p{
-  display: block;
-  padding: 10px 20px 10px 15px;
-  text-align: center;
-} */
-
-
 /* alter grid/flex somehow */
 
 
