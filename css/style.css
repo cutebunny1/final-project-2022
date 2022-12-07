@@ -45,6 +45,8 @@ h1{
   line-height: 1;
   padding: 40px 0;
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
 }
 
 /* for the h1 lunch/dinner and dessert */
