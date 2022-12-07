@@ -39,6 +39,27 @@
         <img src = "images/dessert/tres-leches.jpeg" width = "450" alt = "Tres Leches"/>
         <img src = "images/dessert/flower-cupcakes.jpeg" width = "450" alt = "Flower Cupcakes"/>
     </div>
+
+    <h1> Give Me Feedback</h1>
+		<form id="form">
+			<fieldset>		  
+			  <label for="name_id">What's your name? </label>
+			  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+		  
+			  <label for="email_id">Enter your email if you wish to hear back!</label>
+			  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email">
+		  
+			  <label for="phone_id">Type in your phone number so I can reach you: </label>
+			  <input type="tel" placeholder="123-456-7890 or 1234567890" id = "phone_id" name="phone"  pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}" required>
+		  
+			  <label for="msg">What was your favorite food item pictured?</label>
+			  <input type="text" placeholder="Enter your favorite food item" id = "msg" name="message" required>
+        <br>
+		  
+			  <input type="submit" value="Submit">
+
+			</fieldset>
+		</form>
   </main>
 
 	<footer>

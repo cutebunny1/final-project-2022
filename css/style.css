@@ -269,3 +269,39 @@ footer{
     animation: none;
   }
 } */
+
+/* made a feedback form as an EXTRA */
+form {
+  width: 75%;
+  margin: auto;
+}
+
+label{
+  display: inline-block;
+  margin-right:10px;
+  padding-top: 10px;
+  width:100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #d3d3d3;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  background-color: #129eba;
+  color: #ffffff;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
