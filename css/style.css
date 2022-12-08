@@ -262,14 +262,6 @@ footer{
   }
 }
 
-
-/* turn off animation */
-/* @media (prefers-reduced-motion) {
-  #logo {
-    animation: none;
-  }
-} */
-
 /* made a feedback form as an EXTRA */
 form {
   width: 75%;
@@ -294,7 +286,7 @@ input {
 
 input[type=submit] {
   cursor: pointer;
-  background-color: #129eba;
+  background-color: #27707e;
   color: #ffffff;
   padding: 15px 20px;
   margin: 8px 0;
@@ -305,3 +297,10 @@ input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 }
+
+/* turn off animation */
+/* @media (prefers-reduced-motion) {
+  #logo {
+    animation: none;
+  }
+} */
