@@ -131,7 +131,7 @@ footer{
 }
 
 /* grid for lunch/dinner */
-.grid{
+.grid {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -183,7 +183,7 @@ footer{
     text-align: center;
   }
 
-  .grid{
+  .grid {
     /* for two column view */
     grid-template-columns: auto auto;
     align-items: stretch;
